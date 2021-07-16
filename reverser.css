@@ -1,0 +1,23 @@
+body{
+    background-color: goldenrod;
+    text-align: center;
+    font-size: 25px;
+}
+#text{
+    margin-top: 25px;
+    right: 50%;
+}
+#btn{
+    position: relative;
+    top: 5px;
+}
+#reversed{
+    color: white;
+    position: relative;
+    margin-top: 50px;
+    font-size: 25px;
+}
+#word{
+    position: relative;
+    margin-top: -25px;
+}
