@@ -1,82 +1,87 @@
-$font-Bebas: 'Bebas Neue', cursive;
-$font-Lobster: 'Lobster', cursive;
+$font-Bebas: "Bebas Neue", cursive;
+$font-Lobster: "Lobster", cursive;
 
 * {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
 }
 
 // MOBILE RESOLUTION
 
 body {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
-  font-family: $font-Bebas;
-  height: 100vh;
-  background-image: linear-gradient(
-    to right,
-    rgba(218, 165, 32, 0.856),
-    goldenrod
-  );
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+	font-family: $font-Bebas;
+	height: 100vh;
+	background-image: linear-gradient(
+		to right,
+		rgba(218, 165, 32, 0.856),
+		goldenrod
+	);
 }
 
 // TITLE
 #header {
-  text-align: center;
-  font-family: $font-Lobster;
-  font-size: 3.3rem;
-  border-radius: 5px;
-  box-shadow: 0 0 5px --1px black;
-  width: 95%;
-  max-width: 310px;
+	text-align: center;
+	font-family: $font-Lobster;
+	font-size: 3.3rem;
+	border-radius: 5px;
+	box-shadow: 0 0 5px --1px black;
+	width: 95%;
+	max-width: 310px;
 }
 
 // MAIN CONTAINER
 #main-container {
-  display: flex;
-  flex-direction: column;
-  row-gap: 20px;
-  font-size: 3rem;
+	display: flex;
+	flex-direction: column;
+	row-gap: 20px;
+	font-size: 2.2rem;
 
-  #arrow {
-    align-self: center;
-  }
+	#arrow {
+		align-self: center;
+	}
 }
 
 // INPUT CONTAINER
 #input-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  row-gap: 15px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	row-gap: 15px;
 
-  #text-field {
-    border: 1px solid black;
-    height: 2rem;
-    width: calc(40vw + 50%);
-    max-width: 300px;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px -2px black;
-    font-size: 1.2rem;
-  }
-  #button {
-    width: 100px;
-    border-radius: 5px;
-    height: 1.7rem;
-    font-size: 1.2rem;
-  }
+	#text-field {
+		border: 1px solid black;
+		height: 2rem;
+		width: calc(40vw + 50%);
+		max-width: 300px;
+		border-radius: 5px;
+		box-shadow: 0 2px 5px -2px black;
+		font-size: 1.2rem;
+	}
+	#button {
+		width: 100px;
+		border-radius: 5px;
+		height: 1.7rem;
+		font-size: 1.2rem;
+	}
 }
 
 // DESKTOP RESOLUTION
 @media screen and (min-width: 1000px) {
-  #header {
-    margin-top: -35px;
-    font-size: 5rem;
-    width: 480px;
-    max-width: none;
+	#header {
+		margin-top: -35px;
+		font-size: 5rem;
+		width: 480px;
+		max-width: none;
+	}
+
+	#main-container {
+    font-size: 3rem;
+  
   }
 }
